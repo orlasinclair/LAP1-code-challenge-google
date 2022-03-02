@@ -12,6 +12,7 @@ const searchResults = [
     { id: 8, result: "result 8"},
     { id: 9, result: "result 9"},
     { id: 10, result: "result 10"},
+    { id: 11, result: "<a href='https://google.com' target='_blank'>google</a>"},
 ];
 
 module.exports = searchResults;
