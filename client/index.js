@@ -27,3 +27,10 @@ function randomRedirect(e){
     })
 }
 
+// const clickedLogo = document.getElementById('logo');
+// clickedLogo.addEventListener('click', redirectPage);
+
+// function redirectPage(e){
+//     e.preventDefault()
+//     window.location.replace("/index.html");
+// };
