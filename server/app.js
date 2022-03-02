@@ -25,14 +25,14 @@ app.get('/results', (req,res)=> {
     res.json(searchResults)
 })
 
-// function getRandomresult(){
-//     var randomResult= searchResults[Math.floor(Math.random()*searchResults.length)];
-//     return randomResult
-// }
+function getRandomresult(){
+    var randomResult= searchResults[Math.floor(Math.random()*searchResults.length)];
+    return randomResult
+}
 
-// app.get('/results/random', (req,res) =>{
-//     let randomR = getRandomresult();
-//     res.json(randomR)
-//   })
+app.get('/results/random', (req,res) =>{
+    let randomR = getRandomresult();
+    res.json(randomR)
+  })
 
 module.exports={app}
