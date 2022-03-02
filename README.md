@@ -20,7 +20,7 @@ open browser on the localhost:3000 or run from terminal `node index.js`
 
 # Query & Selected Results
 
- Index | What is Full Stack Web Development? |
+ Index | [What is Full Stack Web Development?](https://www.google.com/search?q=what+is+full+stack+web+development&rlz=1C1CHBF_en-GBGB883GB883&oq=what+is+full+stack+web+development&aqs=chrome..69i57.5532j0j1&sourceid=chrome&ie=UTF-8) |
 ---|----|
 1 | https://www.w3schools.com/whatis/whatis_fullstack.asp#:~:text=A%20full%20stack%20web%20developer,ASP%2C%20Python%2C%20or%20Node)
 2 | https://www.geeksforgeeks.org/what-is-full-stack-development/
