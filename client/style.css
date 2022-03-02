@@ -1,0 +1,149 @@
+html{
+    height: 100%
+}
+
+#navbar{
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+     "about store . gmail images apps sign-in";
+}
+
+#about{
+    grid-area: about;
+    justify-self: center;
+    align-self: cener;
+}
+#store{
+    grid-area: store;
+    justify-self: center;
+    align-self: cener;
+}
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: cener;
+}
+#images{
+    grid-area: images;
+    justify-self: center;
+    align-self: cener;
+}
+#apps{
+    grid-area: apps;
+    justify-self: center;
+    align-self: cener;
+}
+#sign-in{
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: cener;
+}
+
+#navbar>a{
+    text-decoration: none;
+    color: #202124;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100pxx;
+}
+
+#main-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 50px 50px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox. ";
+    margin-top: 100px;
+}
+
+#logo{
+    grid-area: logo;
+    justify-self: center;
+}
+#search{
+    grid-area: search;
+    height: 44px;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    padding: 5px;
+    margin: 0 auto;
+    width: 500px; 
+    align-self: center;
+    /* max-width: 584px; */
+}
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+    margin-top: 70px;
+    
+}
+
+#search-btn, #random-search-btn{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 100px 100px 150px 1fr 70px 70px 70px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "advertising business how . privacy terms settings";
+}
+
+#advertising{
+    grid-area: advertising;
+    justify-self: center;
+    align-self: cener;
+}
+#business{
+    grid-area: business;
+    justify-self: center;
+    align-self: cener;
+}
+#how{
+    grid-area: how;
+    justify-self: center;
+    align-self: cener;
+}
+#privacy{
+    grid-area: privacy;
+    justify-self: center;
+    align-self: cener;
+}
+#terms{
+    grid-area: terms;
+    justify-self: center;
+    align-self: cener;
+}
+#settings{
+    grid-area: settings;
+    justify-self: center;
+    align-self: cener;
+}
+
+#footer>a{
+    text-decoration: none;
+    color: #202124;
+    font-family: Arial, Helvetica, sans-serif;
+}

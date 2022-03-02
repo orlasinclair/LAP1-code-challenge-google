@@ -24,7 +24,25 @@ class Result {
         }
     }
 
+    static findRandom(id) {
+        //Finds a random result
+        try {
+        const resultData = resultsData.find((result) => result.id === id); //Returns the data of a result by using its ID
+        const result = new Result(resultData); /*Creates a new result, maybe we'll not use it since we are giving 10 fixed results*/
+
+        const randomResult = result[Math.floor(Math.random() * result.length)];
+        return randomResult;
+        } catch (e) {
+        throw new Error(`${e}`);
+        }
+    }
+
+
+
+
 
 };    
 
 module.exports = Result;
+
+
