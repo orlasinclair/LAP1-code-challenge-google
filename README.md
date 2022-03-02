@@ -9,10 +9,14 @@
 * Open terminal and navigate to the server folder folder.
 * Run npm install to install dependencies.
 
+-----
+
 # Usage
 
 Run npm start to launch server.
 open browser on the localhost:3000 or run from terminal `node index.js`
+
+----
 
 # Query & Selected Results
 
