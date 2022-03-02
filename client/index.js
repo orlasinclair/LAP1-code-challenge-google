@@ -9,7 +9,14 @@ function redirect(e){
         }
 
 
+// const randomButton = document.querySelector('#random-search-btn')
 
+// randomButton.addEventListener('submit', randomRedirect)
+
+// function randomRedirect(e){
+//     e.preventDefault()
+//     location.href = 'results.html'
+// }
 
 
 

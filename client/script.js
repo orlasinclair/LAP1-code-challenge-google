@@ -24,5 +24,6 @@ function getResults(e){
 })
 }
 
+// let randomResult = r[result[Math.floor(Math.random() * result.length)]];
 
-// const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
