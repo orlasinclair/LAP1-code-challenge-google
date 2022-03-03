@@ -1,0 +1,45 @@
+html{
+    height: 100%
+}
+#banner{
+    display: grid;
+    grid-template-columns: 200px 500px 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "logo search .";
+}
+#logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+    height: 30px;
+    aspect-ratio: auto 92 / 30;
+    width: 92px;
+}
+#search{
+    grid-area: search;
+    height: 39px;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    padding: 5px;
+    margin: 0 auto;
+    width: 500px; 
+    align-self: center;
+    /* max-width: 584px; */
+}
+
+ul{
+    list-style: none;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 200px 500px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". result .";
+}
+ul{
+    grid-area: result;
+}
