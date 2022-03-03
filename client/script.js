@@ -27,3 +27,10 @@ function getResults(e){
 // let randomResult = r[result[Math.floor(Math.random() * result.length)]];
 
 
+const clickedLogo = document.getElementById('logo');
+clickedLogo.addEventListener('click', redirectPage);
+
+function redirectPage(e){
+    e.preventDefault()
+    window.location.replace("index.html");
+};
