@@ -13,7 +13,7 @@
 # Usage
 
 Run npm start to launch server.
-open browser on the localhost:3000 or run from terminal `node index.js`
+open browser on the localhost:3000 or run from terminal `node server.js`
 
 ----
 
