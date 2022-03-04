@@ -10,37 +10,51 @@
     <title>Google</title>
 </head>
 <body>
-    <section id="navbar">
-        <a href="#" id="about">About</a>
-        <a href="#" id="store">Store</a>
-        <a href="#" id="gmail">Gmail</a>
-        <a href="#" id="images">Images</a>
-        <a href="#" id="apps">apps</a>
-        <a href="#" id="sign-in">Sign in</a>
+    <section id="homepage">
+        <section id="navbar">
+            <a href="#" id="about">About</a>
+            <a href="#" id="store">Store</a>
+            <a href="#" id="gmail">Gmail</a>
+            <a href="#" id="images">Images</a>
+            <a href="#" id="apps">apps</a>
+            <a href="#" id="sign-in">Sign in</a>
+        </section>
+        <section id="main-body">
+            <img id="logo" src="./images/google.png" alt="Google logo">
+            <div id="form-body">
+                <form id="submit-btn">
+                    <input type="text" id="search" placeholder="What is Full Stack Web Development?">
+                    <input type='submit' id="search-btn" value="Google Search">
+                </form>
+                <form id="random-btn">
+                    <input type='submit' id="random-search-btn" value="I'm Feeling Lucky">
+                </form>
+            </div>
+        </section>
+        <section id="footer">
+            <a href="#" id="advertising">Advertising</a>
+            <a href="#" id="business">Business</a>
+            <a href="#" id="how">How Search works</a>
+            <a href="#" id="privacy">Privacy</a>
+            <a href="#" id="terms">Terms</a>
+            <a href="#" id="settings">Settings</a>
+        </section>
     </section>
-    <section id="main-body">
-        <img id="logo" src="./images/google.png" alt="Google logo">
-        <input type="text" id="search">
-        <div id="flexbox">
 
-            <form id="submit-btn">
-                <input type='submit' id="search-btn" value="Google Search">
-            </form>
-            <form id="random-btn">
-                <input type='submit' id="random-search-btn" value="I'm Feeling Lucky">
-            </form>
-        </div>
+    <!-- will make a results page here which will initially be hidden from view -->
+    <section id="results-page" class="invisible" >
+        <section id="banner">
+            <img id="logo-result" src="./images/google_result.png" style='cursor:pointer' alt="Google logo" title="Go To Google Home">  
+            <input type="text" id="search-result" placeholder="What is Full Stack Web Development?" value="">
+        </section>
+        <section id="main">
+            <ul>
+            </ul>
+         </section>
 
-    </section>
-    <section id="footer">
-        <a href="#" id="advertising">Advertising</a>
-        <a href="#" id="business">Business</a>
-        <a href="#" id="how">How Search works</a>
-        <a href="#" id="privacy">Privacy</a>
-        <a href="#" id="terms">Terms</a>
-        <a href="#" id="settings">Settings</a>
     </section>
 </body>
-</html>
 
+
+</html>
   

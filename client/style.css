@@ -51,11 +51,10 @@ html{
 #main-body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 50px 50px;
+    grid-template-rows: 200px 100px;
     grid-template-areas: 
     ". logo ."
-    ". search ."
-    ". flexbox. ";
+    ". div .";
     margin-top: 100px;
 }
 
@@ -63,6 +62,20 @@ html{
     grid-area: logo;
     justify-self: center;
 }
+div{
+    grid-area: div;
+    justify-self: center;
+}
+
+/* #form-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 70px;
+    grid-template-areas: 
+    "search search"
+    "search-btn random-search-btn";
+} */
+
 #search{
     grid-area: search;
     height: 44px;
@@ -76,16 +89,9 @@ html{
     align-self: center;
     /* max-width: 584px; */
 }
-#flexbox{
-    display: flexbox;
-    grid-area: flexbox;
-    justify-self: center;
-    align-self: center;
-    margin-top: 70px;
-    
-}
 
-#search-btn, #random-search-btn{
+#search-btn{
+    grid-area: search-btn;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -99,6 +105,25 @@ html{
     min-width: 54px;
     text-align: center;
     cursor: pointer;
+    align-self: left;
+}
+#random-search-btn{
+    grid-area: random-search-btn;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    align-self: center;
+    display: inline;
 }
 
 #footer{
@@ -147,6 +172,56 @@ html{
     color: #202124;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* CSS for the results page */
+
+.invisible{
+    display: none;
+}
+
+#banner{
+    display: grid;
+    grid-template-columns: 200px 500px 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "logo-result search-result .";
+}
+#logo-result{
+    grid-area: logo-result;
+    justify-self: center;
+    align-self: center;
+    height: 30px;
+    aspect-ratio: auto 92 / 30;
+    width: 92px;
+}
+#search-result{
+    grid-area: search-result;
+    height: 39px;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    padding: 5px;
+    margin: 0 auto;
+    width: 500px; 
+    align-self: center;
+    /* max-width: 584px; */
+}
+
+ul{
+    list-style: none;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 200px 500px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". result .";
+}
+ul{
+    grid-area: result;
+}
+
 
 
 
